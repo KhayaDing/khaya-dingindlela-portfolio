@@ -86,7 +86,10 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public
+# public
+# Allow specific files in public folder
+!public/khaya-dingindlela-cv.pdf
+!public/images/
 
 # Storybook build outputs
 .out
