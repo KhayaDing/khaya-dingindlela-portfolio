@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-zinc-500 to-zinc-600 bg-clip-text text-transparent;
+  }
+  
+  /* Standardized Card Styles */
+  .card-base {
+    @apply rounded-lg shadow-md border transition-all duration-300;
+  }
+  
+  .card-light {
+    @apply bg-white border-zinc-200;
+  }
+  
+  .card-dark {
+    @apply bg-zinc-800 border-zinc-700;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  /* Standardized Button Styles */
+  .button-primary {
+    @apply bg-zinc-600 hover:bg-zinc-700 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md;
+  }
+  
+  .button-secondary {
+    @apply bg-zinc-800 hover:bg-zinc-900 text-white px-4 py-2 rounded-lg transition-all duration-300 shadow-md;
+  }
+  
+  /* Standardized Section Styles */
+  .section-padding {
+    @apply py-20 px-6;
+  }
+  
+  .section-light {
+    @apply bg-zinc-50;
+  }
+  
+  .section-dark {
+    @apply bg-zinc-800;
+  }
+  
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+  
+  /* Standardized Tag/Badge Styles */
+  .tag-light {
+    @apply bg-zinc-200 text-zinc-800 px-3 py-1 rounded-lg text-sm;
+  }
+  
+  .tag-dark {
+    @apply bg-zinc-700 text-zinc-200 px-3 py-1 rounded-lg text-sm;
+  }
+  
+  /* Standardized Input Styles */
+  .input-light {
+    @apply border-zinc-300 bg-white;
+  }
+  
+  .input-dark {
+    @apply border-zinc-600 bg-zinc-700;
+  }
+} 
