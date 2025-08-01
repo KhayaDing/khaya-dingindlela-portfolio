@@ -28,17 +28,29 @@ const App = () => {
     setFormStatus('sending');
     
     try {
-      // You can integrate with services like EmailJS, Formspree, or your own backend
-      // For now, we'll simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('https://formspree.io/f/mqaldkbe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
       
-      setFormStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      if (response.ok) {
+        setFormStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
       
-      setTimeout(() => setFormStatus(''), 3000);
+      setTimeout(() => setFormStatus(''), 5000);
     } catch (error) {
       setFormStatus('error');
-      setTimeout(() => setFormStatus(''), 3000);
+      setTimeout(() => setFormStatus(''), 5000);
     }
   };
 
