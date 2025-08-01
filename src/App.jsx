@@ -347,7 +347,7 @@ const App = () => {
               </div>
             )}
             <img 
-              src="/images/profile.jpg" 
+              src="images/profile.jpg" 
               alt="Khaya Dingindlela" 
               className={`w-[500px] h-[500px] object-cover rounded-2xl shadow-2xl mx-auto transition-opacity duration-300 ${
                 imageLoaded ? 'opacity-100' : 'opacity-0'
@@ -355,7 +355,7 @@ const App = () => {
               onLoad={() => setImageLoaded(true)}
               onError={(e) => {
                 setImageError(true);
-                e.target.src = "https://placehold.co/500x500/zinc/ffffff?text=Khaya+Dingindlela";
+                console.log('Image failed to load:', e.target.src);
               }}
               style={{ display: imageLoaded ? 'block' : 'none' }}
             />
