@@ -1,6 +1,6 @@
 # Khaya Dingindlela - Portfolio Website
 
-A modern, responsive portfolio website built with React and Tailwind CSS showcasing Khaya Dingindlela's professional experience, skills, and projects in the ICT field.
+A modern, responsive portfolio website built with React and Tailwind CSS showcasing my professional experience, skills, and projects in the ICT field.
 
 ## 🚀 Features
 
