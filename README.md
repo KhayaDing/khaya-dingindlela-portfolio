@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React and Tailwind CSS showcasing my professional experience, skills, and projects in the ICT field.
 
+**🌐 Live Site:** [View Portfolio](https://khaya-dingindlela-portfolio.netlify.app)
+
 ## 🚀 Features
 
 - **Modern Design**: Clean, professional design with zinc color palette
@@ -59,5 +61,10 @@ portfolio/
 ## 📞 Contact
 
 For questions or support regarding this portfolio template, please reach out through the contact form on the website.
+
+---
+
+**Hosted on:** [Netlify](https://www.netlify.com)
+**Live Site:** [https://khaya-dingindlela-portfolio.netlify.app](https://khaya-dingindlela-portfolio.netlify.app)
 
 ---
